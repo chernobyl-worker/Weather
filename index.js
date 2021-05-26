@@ -2,12 +2,12 @@ const input = document.querySelector("#city");
 const form = document.querySelector("#search");
 
 window.onload = () => {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=d5413aa165d164dbcefab4e9761990c2&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=d5413aa165d164dbcefab4e9761990c2&units=metric`;
     fetch(url).then(r => r.json()).then(r => display(r));
 }
 form.onsubmit = (e) => {
     e.preventDefault();
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=d5413aa165d164dbcefab4e9761990c2&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=d5413aa165d164dbcefab4e9761990c2&units=metric`;
     input.value = "";
     fetch(url).then(r => r.json()).then(r => display(r));
 }
