@@ -55,7 +55,11 @@ a {
     padding: 1%;
 }
 
-@media(max-width:360px) {
+@media(max-width:415px) {
+    #Main {
+        margin: 2% 5%;
+    }
+
     .display{
         padding: 1%;
         margin: 13%;
