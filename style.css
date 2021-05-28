@@ -55,7 +55,7 @@ a {
     padding: 1%;
 }
 
-@media(max-width:415px) {
+@media(max-width:500px) {
     #Main {
         margin: 2% 5%;
     }
